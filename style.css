@@ -1,0 +1,76 @@
+
+
+//Horizontal Navigation Bar
+.navigation {
+	list-style-type: none;
+	width: 100%;
+	height:10%;
+	padding: 12px;
+	overflow: hidden;
+	background-color:#00a3cc; 
+}
+
+.navigation a {
+	float: left;
+	color: black;
+	display: block;
+	text-align: center;
+	padding: 15px 17px;
+	font-weight: bold;
+	background-color:#00a3cc; 
+}
+
+.navigation a:hover {
+  background-color: lightblue;
+  color: black;
+}
+
+.active {
+	background-color: #00a3cc;
+}
+
+.top {
+	text-align: center;
+    font-size: 25px ;
+    padding: 16px;
+    background-color:navajowhite;
+}
+
+
+.center {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.lbback {
+	background-color: lightblue;
+}
+
+.column {
+  height:500px;	
+  float: left;
+  width: 50%;
+  background-color:aquamarine;
+  max-height:100%;
+  overflow: hidden;
+  text-align: center;
+  }
+
+.tricolumn {
+  height:500px;	
+  float: left;
+  width: 33.33%;
+  background-color:#FF0;
+  max-height:100%;
+  overflow-y: scroll;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
