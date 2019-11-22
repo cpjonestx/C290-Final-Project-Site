@@ -8,27 +8,43 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="projectJS.js"></script>
 </head>
-<body class="lbback">
+<body class="lbback" onload="palmaClock()">
 
 <div class="top">
     Visit Mallorca!
 </div>
 
-<div class="navigation">
-    <a href="index.html" class="active">Home</a>
-    <a href="destinations.html"> Destinations </a>
-    <a href="foodDrink.html"> Food and Drink </a>
-    <a href="transportation.html"> Transportation </a> 
-</div>
+<nav>
+    <ul>
+        <li>
+            <!--HOME PAGE! -->
+            <a href="index.html" class="active"> Home </a>
+        </li>
+        <li>
+            <!--Destinations Page -->
+            <a href="destinations.html"> Destinations </a>
+        </li>
+        <li>
+            <!--Food and Drink Page -->
+            <a href="foodDrink.html"> Food and Drink </a>
+        </li>
+        <li>
+            <!--Transportation Page Page -->
+             <a href="transportation.html"> Transportation </a>
+         </li>
+     </ul>
+ </nav>
 
 <div class="center">
     <br><br><h2>Welcome to the Home Page!</h2>
+    <h3> Current time in Mallorca: <div id="palmaTime"></div></h3>
 </div>
 
 
 <div class="container">
-  <h2>Mallorca Photos:</h2>  
+  <h2 class="center">Mallorca Photos:</h2>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -37,7 +53,7 @@
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
 
-    <!-- Wrapper for slides -->
+    <!-- Slideshow with help from W3Schools -->
     <div class="carousel-inner">
       <div class="item active">
         <img src="photo1.jpg" alt="Rocky Beach" style="width:100%; height:100%;">
@@ -65,5 +81,26 @@
 </div>
 </div>
 </div>
+
+
+<div class="center">
+    <h2>Sign up for our newsletter for our Mallorca travel newsletter!</h2>
+    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="get">
+    <fieldset>
+        <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="name" name="firstName">
+        </div>
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="emailaddress">
+        </div>
+
+        <div class="button">
+            <button type="submit">Sign Up</button>
+        </div> 
+    </fieldset>
+    </form>
+
 </body>
 </html>
